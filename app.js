@@ -44,7 +44,11 @@ function sortearAmigo() {
   const resultado = document.getElementById("resultado");
   resultado.innerHTML = `El amigo sorteado es: ${amigoSorteado}`;
 
-  // Opcional: Limpiar la lista después del sorteo
+  // Limpiar la lista de amigos
+  amigos.length = 0; // Vaciar el array
+  mostrarAmigos(); // Actualizar la lista en la interfaz
+}
+
+  
   // amigos.length = 0;
   // mostrarAmigos();
-}
